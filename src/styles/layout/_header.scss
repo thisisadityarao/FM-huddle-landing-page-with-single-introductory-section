@@ -10,6 +10,15 @@
 
   .logo {
     cursor: pointer;
-    width: variables.$fluid-s-l;
+    display: block;
+    width: fit-content;
+
+    img {
+      width: variables.$fluid-s-l;
+    }
+
+    &:focus-visible {
+      @include mixins.focus;
+    }
   }
 }

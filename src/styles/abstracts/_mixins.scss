@@ -18,3 +18,8 @@
     36.5px 36.5px 29.2px rgba(0, 0, 0, 0.09),
     100px 100px 80px rgba(0, 0, 0, 0.15);
 }
+
+@mixin focus {
+  outline: 3px solid black;
+  box-shadow: 0 0 0 6px white;
+}

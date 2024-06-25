@@ -1,10 +1,13 @@
+/* COLORS */
 $violet: hsl(257, 40%, 49%);
 $soft-magenta: hsl(300, 69%, 71%);
 $white: hsl(0, 0%, 100%);
 
+/* TEXT */
 $heading-text: clamp(1.75rem, 1.5357rem + 1.0714vi, 2.5rem);
 $paragraph-text: clamp(1rem, 0.9643rem + 0.1786vi, 1.125rem);
 
+/* SPACING */
 $fluid-s-l: clamp(8rem, 5.689rem + 9.86vw, 12rem);
 $fluid-top: clamp(2.5rem, 2.3571rem + 0.7143vi, 3rem);
 $fluid-bottom: clamp(2.5rem, 2.0714rem + 2.1429vi, 4rem);
