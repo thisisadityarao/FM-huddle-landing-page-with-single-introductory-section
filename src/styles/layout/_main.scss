@@ -17,6 +17,9 @@
 
   .illustration {
     margin-inline: auto;
+    @media (min-width: 80rem) {
+      margin-inline: unset;
+    }
   }
 
   .text__content {
