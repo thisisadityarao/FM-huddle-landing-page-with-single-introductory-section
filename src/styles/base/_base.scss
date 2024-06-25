@@ -1,0 +1,25 @@
+@use "../abstracts/variables";
+
+body {
+  font-family: "OpenSans Regular", sans-serif;
+  font-size: variables.$paragraph-text;
+  font-weight: 500;
+  color: variables.$white;
+  display: flex;
+  min-height: 100svh;
+  flex-direction: column;
+  background-color: variables.$violet;
+  background-image: url("./assets/images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 top;
+  background-size: contain;
+
+  @media (min-width: 75rem) {
+    background-image: url("./assets/images/bg-desktop.svg");
+    background-size: cover;
+  }
+
+  @media (min-width: 87.5rem) {
+    background-size: contain;
+  }
+}

@@ -1,0 +1,50 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.content {
+  flex: 1;
+
+  .wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @media (min-width: 80rem) {
+      flex-direction: row;
+    }
+  }
+
+  .illustration {
+    margin-inline: auto;
+  }
+
+  .text__content {
+    text-align: center;
+    max-width: 65ch;
+    margin-inline: auto;
+
+    h1 {
+      font-family: "Poppins SemiBold", sans-serif;
+      font-size: variables.$heading-text;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    p {
+      margin-block-start: 1rem;
+    }
+
+    .button {
+      margin-block-start: 2rem;
+    }
+
+    @media (min-width: 80rem) {
+      text-align: left;
+
+      h1 {
+        margin-block-start: 2.5rem;
+      }
+    }
+  }
+}

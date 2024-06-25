@@ -1,0 +1,15 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.header {
+  padding-block-start: variables.$fluid-top;
+  padding-block-end: variables.$fluid-bottom;
+  .wrapper {
+    @include mixins.wrapper;
+  }
+
+  .logo {
+    cursor: pointer;
+    width: variables.$fluid-s-l;
+  }
+}

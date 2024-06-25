@@ -1,0 +1,35 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.button {
+  text-decoration: none;
+  font-family: "Poppins Regular", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: variables.$white;
+  color: variables.$violet;
+  border-radius: 2.5rem;
+  padding: 0.75em 5.5em;
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  cursor: pointer;
+  transition: 300ms all ease-in-out;
+  @include mixins.shadow;
+
+  &:hover,
+  &:active {
+    background-color: variables.$soft-magenta;
+    color: variables.$white;
+  }
+
+  &:focus-visible {
+    outline: 3px solid black;
+    box-shadow: 0 0 0 6px white;
+  }
+
+  @media (min-width: 64rem) {
+    padding: 0.8em 3.5em;
+  }
+}

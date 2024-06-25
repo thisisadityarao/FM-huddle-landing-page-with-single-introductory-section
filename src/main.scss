@@ -2,6 +2,19 @@
 
 // 1. Configuration and helpers
 @use "styles/abstracts/variables";
+@use "styles/abstracts/mixins";
 
 // 2. Vendors
 @use "styles/vendors/reset";
+
+// 3. Base stuff
+@use "styles/base/base";
+@use "styles/base/fonts";
+
+// 4. Layout-related sections
+@use "styles/layout/header";
+@use "styles/layout/main";
+@use "styles/layout/footer";
+
+// 5. Components
+@use "styles/components/button";
