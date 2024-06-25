@@ -43,7 +43,12 @@
       text-align: left;
 
       h1 {
+        max-width: 20ch;
         margin-block-start: 2.5rem;
+      }
+
+      p {
+        max-width: 50ch;
       }
     }
   }
